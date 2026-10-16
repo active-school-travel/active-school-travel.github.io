@@ -1,0 +1,29 @@
+name: Import article images
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/import-images.yml'
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download figures into repository
+        run: |
+          set -euo pipefail
+          mkdir -p 1-3/images
+          curl --fail --location --retry 3 --silent --show-error 'https://ua.t.u-tokyo.ac.jp/wp-content/uploads/2026/10/figure1_five_activities.jpg' -o 1-3/images/figure1_five_activities.jpg
+          curl --fail --location --retry 3 --silent --show-error 'https://ua.t.u-tokyo.ac.jp/wp-content/uploads/2026/10/figure2_original_chart-1.png' -o 1-3/images/figure2_original_chart-1.png
+          file 1-3/images/*
+      - name: Commit imported figures
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 1-3/images/
+          if ! git diff --cached --quiet; then
+            git commit -m "Store article figures within GitHub repository"
+            git push
+          fi
