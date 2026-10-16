@@ -6,15 +6,14 @@
 
 - [WordPress親ページ（研究概要・目次）](https://ua.t.u-tokyo.ac.jp/active-school-travel/)
 - [GitHubリポジトリ（ファイル管理）](https://github.com/hino-kimihiro/active-school-travel)
-- [GitHub Issues（担当・進捗管理）](https://github.com/hino-kimihiro/active-school-travel/issues)
-- [GitHub Pull Requests（変更のレビュー）](https://github.com/hino-kimihiro/active-school-travel/pulls)
+- [Googleスプレッドシート（担当・進捗・執筆者確認・修正依頼の管理）](https://docs.google.com/spreadsheets/d/1fLWZC5OR9Yw0Xfsuf6pUUtJw9zvO4iugXa7yxhpS5Hg/edit?usp=sharing)
 - [完成見本 1-3：日本版移動自由性尺度の提案](https://hino-kimihiro.github.io/active-school-travel/1-3/)
 
 ## 1. 最初にすること
 
 1. GitHubの共同編集招待を承諾する。
 2. 上記の完成見本と、`1-3/index.html`、`template/index.html`、`css/style.css` を確認する。
-3. [Issues](https://github.com/hino-kimihiro/active-school-travel/issues)から担当ページを確認する。現在の目次は暫定的に22件で、後から増減する。
+3. [進捗管理スプレッドシート](https://docs.google.com/spreadsheets/d/1fLWZC5OR9Yw0Xfsuf6pUUtJw9zvO4iugXa7yxhpS5Hg/edit?usp=sharing)で担当ページを確認する。現在の目次は暫定的に22件で、後から増減する。
 4. 担当ページのPPTXと公開可能な図表を、大学の共有ストレージで確認する。PPTXそのものをGitHubに置かない。
 
 ## 2. PPTXからHTMLへの変換
@@ -31,9 +30,9 @@
 
 ## 3. 作業ブランチと公開
 
-1. 担当ページごとに作業ブランチ（例 `page/2-1`）を作り、ファイルを編集する。`main` を直接変更しない。
+1. 担当ページのフォルダ（例 `2-1/`）にHTMLと画像を追加・修正する。簡単な作業は `main` に直接保存してよい。共同編集者が同じファイルを同時に変更する場合は、事前に担当を調整する。
 2. 元PPTXとHTMLを照合し、文章の脱落、数値・図表・脚注・キャプションの改変がないことを確認する。PC・スマートフォンで表示とリンクも確認する。
-3. Pull Requestを作成し、他の共同編集者のレビューを受けて`main`に統合する。現在のRulesetでは1件の承認レビューが必要。
+3. `main` に変更を保存すると、GitHub Pagesに反映される。Pull Requestや承認レビューは原則不要。変更履歴はGitHubに残る。
 4. 統合後、GitHub PagesのURL（例 `https://hino-kimihiro.github.io/active-school-travel/2-1/`）を確認する。
 
 **専用プレビュー環境は設けません。** 初稿もGitHub Pagesで閲覧できる状態にしますが、執筆者と研究代表者の確認が終わるまでは、WordPress親ページの目次からリンクしません。リンクがなくてもページ自体は一般公開されるため、未公開原稿、秘密情報、許諾のない図表はGitHubに登録しないこと。
@@ -41,21 +40,25 @@
 ## 4. 執筆者確認と修正
 
 1. 研究代表者と相談して、GitHub PagesのURLを執筆者に送り、内容・数値・図表・表現・公開可否を確認する。
-2. 修正不要の場合も含め、回答日を担当Issueに記録する。
-3. 修正があれば新たな作業ブランチとPull Requestで反映し、必要に応じて再確認する。
+2. 修正不要の場合も含め、依頼日・回答状況・回答日を進捗管理スプレッドシートに記録する。
+3. 修正があればHTML等に反映し、進捗管理スプレッドシートの修正依頼欄・対応状況を更新する。必要に応じて執筆者に再確認を依頼する。
 4. 未回答の執筆者への催促は、研究代表者と相談して行う。
 5. 最終的に研究代表者が確認し、親ページからリンクを追加する。**このリンク追加を正式公開の区切りとします。**
 
-## 5. Issuesの管理方法
+## 5. Googleスプレッドシートでの進捗管理
 
-- 各ページのIssueに担当学生・ステータス・確認依頼日・回答日・修正内容を記録する。
-- チェックリストには「HTML初稿」「画像保存」「表示確認」「執筆者確認」「修正完了」「代表者確認」「親ページリンク追加」までの状況を残す。
-- Issueのタイトルやページ数は変更可能。担当が未定のIssueは学生を招待してから割り当てる。
-- メール本文、非公開原稿、個人情報はIssueに転載しない（Issueも公開される）。
+- [進捗管理スプレッドシート](https://docs.google.com/spreadsheets/d/1fLWZC5OR9Yw0Xfsuf6pUUtJw9zvO4iugXa7yxhpS5Hg/edit?usp=sharing)を進捗管理の唯一の記録場所とする。**GitHub Issuesへの記入は不要**。
+- ページ番号ごとに、Web化の状況、担当者、執筆者への確認依頼日・回答日、修正対応、完了判定、WordPress親ページからのリンク追加状況を更新する。
+- 1ページに複数の修正依頼がある場合は、スプレッドシートの修正依頼ログで案件ごとに記録する。
+- 回答期限を過ぎた場合は、研究代表者と相談して問い合わせる。
+- ページ数・タイトル・執筆者などは暫定であり、必要に応じて追加・変更する。
+- GitHubはHTML・画像の制作と変更履歴の管理に使う。進捗をGitHubとスプレッドシートで二重管理しない。
 
 ## 6. 重要な注意
 
 - `index.html`（リポジトリ直下）はWordPress親ページへの転送専用であり、原則変更しない。
 - 1-3の画像2点はすでに `1-3/images/` に保存されており、WordPressの画像への依存は解消済み。
 - 研究内容の最終判断は執筆者、研究代表者が行う。
+- GitHub Pagesへの掲載後も、執筆者と研究代表者の確認が完了するまではWordPress親ページの目次にリンクしない。
+- スプレッドシートを編集できない場合は、勝手に別の進捗管理表を作らず研究代表者に共有権限を確認する。
 - 公開可否に迷う資料があれば、GitHubに載せる前に確認する。
