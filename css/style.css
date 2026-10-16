@@ -2,8 +2,8 @@
 body{margin:0;padding:24px 16px;background:#fff}
 .mobility-article{width:100%;max-width:900px;margin:0 auto;font-family:system-ui,"Noto Sans JP",sans-serif;color:#243443;font-size:16px;line-height:1.95}
 .mobility-article,.mobility-article *{box-sizing:border-box}
-.mobility-article h1{font-size:2rem;line-height:1.5;font-weight:700;margin:0 0 .8em}
-.mobility-article .subtitle{font-size:1.4rem;font-weight:600;line-height:1.6;margin:0 0 1.5em}
+.mobility-article h1{font-size:1.4rem;line-height:1.5;font-weight:700;margin:0 0 .8em}
+.mobility-article .subtitle{font-size:2rem;font-weight:600;line-height:1.6;margin:0 0 1.5em}
 .mobility-article h2{font-size:1.42rem;line-height:1.5;border-left:5px solid #1685a7;padding-left:16px;margin:2.3em 0 .8em}
 .mobility-article p{margin:0 0 1.25em}
 .mobility-article li{margin-bottom:.6em}
@@ -16,8 +16,8 @@ body{margin:0;padding:24px 16px;background:#fff}
 @media screen and (max-width:600px){
 body{padding:16px}
 .mobility-article{line-height:1.85}
-.mobility-article h1{font-size:1.65rem}
-.mobility-article .subtitle{font-size:1.2rem}
+.mobility-article h1{font-size:1.2rem}
+.mobility-article .subtitle{font-size:1.65rem}
 .mobility-article h2{font-size:1.25rem;padding-left:12px;margin-top:1.8em}
 .mobility-article .key{padding:18px 20px;margin:24px 0}
 .mobility-article figure{margin:24px 0}
