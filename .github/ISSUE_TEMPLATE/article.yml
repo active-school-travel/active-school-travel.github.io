@@ -1,0 +1,36 @@
+name: 研究成果ページの制作・確認
+description: HTML化、執筆者確認、修正、公開までの進捗
+title: "[ページ番号] ページタイトル"
+body:
+  - type: input
+    id: author
+    attributes:
+      label: 執筆者
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 元PPTXの保管場所（非公開ストレージの参照名）
+      description: 未公開原稿や個人情報を公開リポジトリにアップロードしないでください。
+  - type: textarea
+    id: checklist
+    attributes:
+      label: 進捗チェックリスト
+      value: |
+        - [ ] PPTXの原稿と公開許可を確認
+        - [ ] HTML初稿を作成
+        - [ ] 画像をページ内の images/ に保存
+        - [ ] PC・スマートフォンで表示確認
+        - [ ] 執筆者に確認依頼
+        - [ ] 執筆者から回答（修正不要も含む）
+        - [ ] 修正を反映
+        - [ ] 研究代表者が最終確認
+        - [ ] Pull Requestを統合して公開
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: 連絡・修正履歴
+      description: 依頼日・回答日・修正概要を記録（個人情報は書かない）
