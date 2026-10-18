@@ -5,9 +5,9 @@
 ## 作業に使うURL
 
 - [WordPress親ページ（研究概要・目次）](https://ua.t.u-tokyo.ac.jp/active-school-travel/)
-- [GitHubリポジトリ（ファイル管理）](https://github.com/hino-kimihiro/active-school-travel)
+- [GitHubリポジトリ（ファイル管理）](https://github.com/active-school-travel/active-school-travel.github.io)
 - [Googleスプレッドシート（担当・進捗・執筆者確認・修正依頼の管理）](https://docs.google.com/spreadsheets/d/1fLWZC5OR9Yw0Xfsuf6pUUtJw9zvO4iugXa7yxhpS5Hg/edit?usp=sharing)
-- [完成見本 1-3：日本版移動自由性尺度の提案](https://hino-kimihiro.github.io/active-school-travel/1-3/)
+- [完成見本 1-3：日本版移動自由性尺度の提案](https://active-school-travel.github.io/1-3/)
 
 ## 1. 最初にすること
 
@@ -34,7 +34,7 @@
 1. 担当ページのフォルダ（例 `2-1/`）にHTMLと画像を追加・修正する。簡単な作業は `main` に直接保存してよい。共同編集者が同じファイルを同時に変更する場合は、事前に担当を調整する。
 2. 元PPTXとHTMLを照合し、文章の脱落、数値・図表・脚注・キャプションの改変がないことを確認する。PC・スマートフォンで表示とリンクも確認する。
 3. `main` に変更を保存すると、GitHub Pagesに反映される。Pull Requestや承認レビューは原則不要。変更履歴はGitHubに残る。
-4. 統合後、GitHub PagesのURL（例 `https://hino-kimihiro.github.io/active-school-travel/2-1/`）を確認する。
+4. 統合後、GitHub PagesのURL（例 `https://active-school-travel.github.io/2-1/`）を確認する。
 
 **専用プレビュー環境は設けません。** 初稿もGitHub Pagesで閲覧できる状態にしますが、執筆者と研究代表者の確認が終わるまでは、WordPress親ページの目次からリンクしません。リンクがなくてもページ自体は一般公開されるため、未公開原稿、秘密情報、許諾のない図表はGitHubに登録しないこと。
 
