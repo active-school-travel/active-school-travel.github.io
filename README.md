@@ -14,7 +14,8 @@
 1. GitHubの共同編集招待を承諾する。
 2. 上記の完成見本と、`1-3/index.html`、`template/index.html`、`css/style.css` を確認する。
 3. [進捗管理スプレッドシート](https://docs.google.com/spreadsheets/d/1fLWZC5OR9Yw0Xfsuf6pUUtJw9zvO4iugXa7yxhpS5Hg/edit?usp=sharing)で担当ページを確認する。現在の目次は暫定的に22件で、後から増減する。
-4. 担当ページのPPTXと公開可能な図表を、大学の共有ストレージで確認する。PPTXそのものをGitHubに置かない。
+4. 各ページの元原稿（PPTX形式）は[原稿提出フォルダ（Google Drive）](https://drive.google.com/drive/folders/1OGIWsLDd_KBMaqbltiwN2RWlIamkpjGi?usp=drive_link)に保存されている。担当ページのPPTXを**一度パソコンにダウンロードし、ダウンロードしたコピーをAIに渡す**こと。Google Drive上の提出原稿をAIに直接編集・上書きさせない。
+5. 元のPPTXは執筆者の原稿として保全し、内容確認や照合の基準とする。PPTXそのものを公開GitHubリポジトリに置かない。
 
 ## 2. PPTXからHTMLへの変換
 
